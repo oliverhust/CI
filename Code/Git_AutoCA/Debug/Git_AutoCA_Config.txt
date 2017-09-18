@@ -1,0 +1,24 @@
+#配置文件
+
+#主线分支
+branch_offcial = master
+
+#提交代码的分支
+branch_push = work
+
+#一些文件/脚本的路径设置
+#status_txt = sys_status.txt
+#ca_lint_txt = CA_Lint.txt
+#ca_lint_tmp_txt = CA_Lint_tmp.txt
+#ca_run = Run_CA.bat
+#sendmail = Fini.py
+
+#CA_Server绑定的端口号
+#ca_port = 7777
+
+#错误和警告的数量限制
+error = 0, 0, 8
+warning = 10000, 10000, 10000
+info = 10000, 10000, 10000
+note = 10000, 10000, 10000
+

@@ -1,0 +1,16 @@
+1.搭建前确保邮件服务器、Git安装到D盘根目录，Git设置好姓名邮箱，最好也装TortoiseGit
+2.安装CopSSH 5.00 Free.exe到D盘根目录，不能用老版本的
+  （1）新建一个叫git的普通计算机账户，OpSSH中也添加账户
+  （2）Client上生成公钥复制到Server上D:\ICW\home\git\.ssh\authorized_keys文件中 
+  （3）把Git中的文件复制到D:\ICW\bin
+  （4）在Client用ssh尝试登录如果不用输密码则本步骤成功
+3.在D盘存放Git仓库，添加git账户权限  git clone的地址是相对于D盘的。
+  比如仓库在D:/SVTI/Code下则 git clone ssh://git@www.svti.com/SVTI/Code
+  Client端成功则表示OK
+4.安装jenkins
+    （1）安全性：只允许登录用户操作
+    主页 --- Manage Jenkins --- Configure Global Security --- Enable Security -- Jenkins’ own user database -- Allow users to sign up
+    重新打开网页，注册用户
+    然后 主页 --- Manage Jenkins --- Configure Global Security -- 登录用户可以做任何事情
+
+5.修改所有脚本里面的参数为实际路径

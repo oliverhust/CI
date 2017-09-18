@@ -1,0 +1,67 @@
+
+/*------------------------------------------- 合入北京测试后代码出现的CA -------------------------------------------*/
+
+
+STATIC ULONG _ike_GetSpBySVTI(INOUT IKE_IPSEC_POLICY_S *pstP2Policy)
+    E:\SVTI\Code\VPN\src\sbin\ipsec\app\ipsec_ike.c L2494 Info 3801 
+        function '_ike_GetSpBySVTI' excessive lines, NEST=2 MVG=22 LOC=54
+
+STATIC ULONG _ike_GetSpBySVTI(INOUT IKE_IPSEC_POLICY_S *pstP2Policy)
+    E:\SVTI\Code\VPN\src\sbin\ipsec\app\ipsec_ike.c L2494 Info 3802 
+        function '_ike_GetSpBySVTI' excessive MVG, NEST=2 MVG=22 LOC=54
+
+STATIC ULONG _ike_GetSpByIf(IN UCHAR ucIKEVersion, INOUT IKE_IPSEC_POLICY_S *pstP2Policy)
+    E:\SVTI\Code\VPN\src\sbin\ipsec\app\ipsec_ike.c L2609 Info 3805 
+        function '_ike_GetSpByIf' excessive average MVG, NEST=2 MVG=19 LOC=47 NBNC=73
+
+if (BOOL_TRUE == bIsNeedPrependIP)
+    E:\SVTI\Code\VPN\src\kernel\ipsec\ipsec_kah.c L1064 Info 3811 
+        control 'if' excessive line, DEPTH=0 NEST=2 MVG=7 LOC=24
+
+    if (BOOL_TRUE == bIsNeedPrependIP)
+    E:\SVTI\Code\VPN\src\kernel\ipsec\ipsec_kah.c L1424 Info 3811 
+        control 'if' excessive line, DEPTH=0 NEST=2 MVG=7 LOC=24
+
+    if (BOOL_TRUE == bIsNeedPrependIP)
+    E:\SVTI\Code\VPN\src\kernel\ipsec\ipsec_kah.c L2171 Info 3811 
+        control 'if' excessive line, DEPTH=0 NEST=2 MVG=7 LOC=24
+
+    if (BOOL_TRUE == bIsNeedPrependIP)
+    E:\SVTI\Code\VPN\src\kernel\ipsec\ipsec_kah.c L2525 Info 3811 
+        control 'if' excessive line, DEPTH=0 NEST=2 MVG=7 LOC=24
+
+ULONG IPSEC_KFWD6_TunnProFastOutput
+    E:\SVTI\Code\VPN\src\kernel\ipsec\ipsec6_kfwd.c L8762 Info 3801 
+        function 'IPSEC_KFWD6_TunnProFastOutput' excessive lines, NEST=3 MVG=18 LOC=52
+
+ULONG IPSEC_KFWD6_TunnProFastOutput
+    E:\SVTI\Code\VPN\src\kernel\ipsec\ipsec6_kfwd.c L8762 Info 3802 
+        function 'IPSEC_KFWD6_TunnProFastOutput' excessive MVG, NEST=3 MVG=18 LOC=52
+
+
+    if (BOOL_TRUE == stESPPend.bIsNeedPrependIP)
+    E:\SVTI\Code\VPN\src\kernel\ipsec\ipsec_kesp.c L1512 Info 3811 
+        control 'if' excessive line, DEPTH=0 NEST=2 MVG=7 LOC=25
+
+    if (BOOL_TRUE == stESPPend.bIsNeedPrependIP)
+    E:\SVTI\Code\VPN\src\kernel\ipsec\ipsec_kesp.c L1803 Info 3811 
+        control 'if' excessive line, DEPTH=0 NEST=2 MVG=7 LOC=25
+
+    if (BOOL_TRUE == stESPPend.bIsNeedPrependIP)
+    E:\SVTI\Code\VPN\src\kernel\ipsec\ipsec_kesp.c L2483 Info 3811 
+        control 'if' excessive line, DEPTH=0 NEST=2 MVG=7 LOC=25
+
+    if (BOOL_TRUE == stESPPend.bIsNeedPrependIP)
+    E:\SVTI\Code\VPN\src\kernel\ipsec\ipsec_kesp.c L2779 Info 3811 
+        control 'if' excessive line, DEPTH=0 NEST=2 MVG=7 LOC=25
+
+ULONG IPSEC_KFWD_TunnProFastOutput
+    E:\SVTI\Code\VPN\src\kernel\ipsec\ipsec_kfwd.c L9524 Info 3801 
+        function 'IPSEC_KFWD_TunnProFastOutput' excessive lines, NEST=3 MVG=18 LOC=51
+
+ULONG IPSEC_KFWD_TunnProFastOutput
+    E:\SVTI\Code\VPN\src\kernel\ipsec\ipsec_kfwd.c L9524 Info 3802 
+        function 'IPSEC_KFWD_TunnProFastOutput' excessive MVG, NEST=3 MVG=18 LOC=51
+
+
+

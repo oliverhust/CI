@@ -1,0 +1,34 @@
+#!/bin/sh
+#
+#++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#exit 0
+
+
+#################################################################
+#The offcial branch| NOT SUPPORT Variable in Git Command!
+#BRANCH_OFFCIAL=master
+#The branch that can be pushed
+#BRANCH_PUSH=work | NOT SUPPORT Variable in Git Command!
+#Path of project       ---------you can Change the path-----------
+PATH_PROJECT=/e/SVTI/Code
+#################################################################
+#The status file path  
+GIT_STAT_TXT=$PATH_PROJECT/.git/sys_status.txt
+#To save who is pushing or CAing
+GIT_PUSH_WHO_TXT=$PATH_PROJECT/.git/hook_who_push.txt
+
+#Start CA
+echo -e "start\r" > $GIT_STAT_TXT
+#---------You can Change the branch name---------
+git log -1 --format=%ae --branches work > $GIT_PUSH_WHO_TXT
+date >> $GIT_PUSH_WHO_TXT
+echo "+++++++++++++++++++++++++++++++++++++++++++++++++"
+echo "+  The CA Check Tool is running,please wait...  +"
+echo "+  The CA Result will be send to your mailbox.  +"
+echo "+++++++++++++++++++++++++++++++++++++++++++++++++"
+    
+#visit the compile URL  Do not use Variable in command 'wget' 
+#----------you can change or add the URL---------
+curl --user sys:123456 -X POST http://localhost:8080/job/Compile/build?token=4e127655ecbb15bbb23000d6093669df > /dev/null
+
+exit 0

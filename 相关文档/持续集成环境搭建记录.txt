@@ -1,0 +1,7 @@
+
+使用不同账户，执行执行脚本时候sudo经常会碰到 sudo: sorry, you must have a tty to run sudo这个情况，其实修改一下sudo的配置就好了
+vi /etc/sudoers (最好用visudo命令)
+注释掉 Default requiretty 一行
+#Default requiretty
+
+设置邮件接收时间间隔为5分钟以内

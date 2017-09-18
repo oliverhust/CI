@@ -1,0 +1,25 @@
+需要制作的编译环境：
+
+mpu_debug.tar :
+
+mpu_release.tar
+
+debug.tar:  支持 debug 64mpu, 
+                 debug 64cen
+            debug版本，编译速度较慢
+
+release.tar:支持 release 64mpu,
+                 release 64cen
+            release版本，编译速度较快
+            
+            
+编译环境制作：
+1.解压最小的PUBLIC chmod a+x -R PUBLIC
+2.单独一个PUBLIC编译各种版本 加-d参数
+3.在PUBLIC/target/klib里面新建目录，把对应的.a文件复制到这个目录
+4.修改PUBLIC相关的配置文件及脚本(用beyond compare合)，并上传到Git
+5.加-d参数再编一次（只有PUBLIC文件夹）
+6.tar cf xxx PUBLIC/
+7.加上VPN NETFWD的代码进行编译
+
+

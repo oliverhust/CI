@@ -1,0 +1,25 @@
+#默认配置文件 将此文件名改为AutoCA_Config.txt即可生效
+
+#主线分支
+branch_offcial = master
+
+#提交代码的分支
+branch_push = work
+
+#一些文件/脚本的路径设置
+status_txt = sys_status.txt
+ca_lint_txt = CA_Lint.txt
+ca_lint_tmp_txt = CA_Lint_tmp.txt
+ca_run = Run_CA.bat
+sendmail = Sendmail.py
+wget_tmp = build@delay=0sec
+
+#CA_Server绑定的端口号
+ca_port = 8888
+
+#错误和警告的数量限制
+error = 0, 400, 1000
+warning = 10000, 10000, 10000
+info = 10000, 10000, 10000
+note = 10000, 10000, 10000
+
